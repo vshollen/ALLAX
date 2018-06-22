@@ -1,0 +1,3235 @@
+<!--https://www.w3schools.com/html/html_examples.asp-->
+<!--Any one of these things can give you more info on how to use it but build a site then do this-->
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--HTML Formatting Tools Head-->
+  <div>
+    <!--HTML CSS Head Script-->
+    <div>
+      <!--HTML with inline CSS-->
+      <h1 style="color:blue;">This is a Blue Heading</h1>
+      <!--HTML with internal CSS-->
+      <style>
+        body {
+          background-color: powderblue;
+        }
+
+        h1 {
+          color: blue;
+        }
+
+        p {
+          color: red;
+        }
+      </style>
+
+      <!--HTML with external CSS-->
+      <link rel="stylesheet" href="styles.css">
+      <!--HTML with CSS fonts-->
+      <style>
+        h1 {
+          color: blue;
+          font-family: verdana;
+          font-size: 300%;
+
+        }
+
+        p {
+          color: red;
+          font-family: courier;
+          font-size: 160%;
+        }
+      </style>
+      <!--HTML with CSS using the id attribute-->
+      <style>
+        #p01 {
+          color: blue;
+        }
+      </style>
+      <!--HTML with CSS using the class attribute-->
+      <style>
+        p.error {
+          color: red;
+        }
+      </style>
+      <!--HTML and CSS borders-->
+      <style>
+        p {
+          border: 1px solid powderblue;
+        }
+      </style>
+      <!--HTML and CSS padding-->
+      <style>
+        p {
+          border: 1px solid powderblue;
+          padding: 30px;
+        }
+      </style>
+      <!--HTML and CSS margin-->
+      <style>
+        p {
+          border: 1px solid powderblue;
+          margin: 50px;
+        }
+      </style>
+    </div>
+  </div>
+
+  <!--This holds the stuff that runs site-->
+  <div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+
+    <title>React App</title>
+  </div>
+
+  <!--Items you can insert Head populate Layout-->
+  <div>
+    <!--Changing the color of links-->
+    <div>
+    <style>
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+    </div>
+
+    <!--HTML Images-->
+    <div>
+    <!--An image height and width using both-->
+        <style>
+        /*This stylesheet sets the width of all images to 100%: */
+        img {
+            width:100%;
+        }
+        </style>
+
+    </div>
+
+    <!--HTML Tables-->  
+    <div>
+      <!--A table with borders-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+          }
+          </style>
+
+      <!--A table with collapsed borders-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          </style>
+
+      <!--A table with cell padding-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 15px;
+          }
+          </style>
+
+      <!--A table with headings-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 5px;
+          }
+          </style>
+
+      <!--A table with left-aligned headings-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 5px;
+          }
+          th {
+              text-align: left;
+          }
+          </style>
+      
+      <!--Horizontal/Vertical table headings-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 5px;
+              text-align: left;
+          }
+          </style>
+
+      <!--A table with a caption-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 5px;
+              text-align: left;
+          }
+          </style>
+
+      <!--Table cells that span more than one column-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 5px;
+              text-align: left;    
+          }
+          </style>
+
+      <!--Table cells that span more than one row-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 5px;
+              text-align: left;    
+          }
+          </style>
+
+      <!--A table with cell spacing-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              padding: 5px;
+          }
+          table {
+              border-spacing: 15px;
+          }
+          </style>
+
+      <!--A table with HTML tags inside-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 5px;
+          }
+          </style>
+
+      <!--Tables with different style using id I-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 15px;
+              text-align: left;
+          }
+          table#t01 {
+              width: 100%;    
+              background-color: #f1f1c1;
+          }
+          </style>
+
+      <!--Tables with different style using id II-->
+      <style>
+          table {
+              width:100%;
+          }
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 15px;
+              text-align: left;
+          }
+          table#t01 tr:nth-child(even) {
+              background-color: #eee;
+          }
+          table#t01 tr:nth-child(odd) {
+             background-color: #fff;
+          }
+          table#t01 th {
+              background-color: black;
+              color: white;
+          }
+          </style>
+
+      <!--Tables with different style using class I-->
+      <style>
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 5px;
+              text-align: left;
+          }
+          table.names {
+              width: 100%;    
+              background-color: #f1f1c1;
+          }
+          </style>
+
+      <!--Tables with different style using class II-->
+      <style>
+          table {
+              width:100%;
+          }
+          table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+          }
+          th, td {
+              padding: 5px;
+              text-align: left;
+          }
+          table.names tr:nth-child(even) {
+              background-color: #eee;
+          }
+          table.names tr:nth-child(odd) {
+             background-color:#fff;
+          }
+          table.names th {
+              background-color: black;
+              color: white
+          }
+          </style>
+
+    </div>
+  
+    <!--HTML Lists-->
+    <div>
+    <!--A horizontal list-->
+    <style>
+        ul#menu li {
+            display:inline;
+        }
+        </style>
+    <!--A horizontal list menu NAVIGATION BAR-->
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111111;
+        }
+        </style>
+    </div>
+ 
+    
+  </div>
+
+ <!--The rest head plus left over head script-->
+    <div>
+    <!--HTML Classes-->
+    <div>
+    <!--Style all elements with a specified class name-->
+    <style>
+        .cities {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        </style>
+    
+    <!--Access elements with a specified class name, with JavaScript-->
+    <style>
+        div.cities {
+            background-color: black;
+            color: white;
+            margin: 20px 0 20px 0;
+            padding: 20px;
+        }
+        </style>
+
+    <!--Multiple classes-->
+    <style>
+        span.note {
+            font-size: 120%;
+            color: red;
+        }
+        </style>
+
+    <!--Same class, different tag-->
+    <style>
+        .city {
+          background-color: tomato;
+          color: white;
+          padding: 10px;
+        } 
+        </style>
+
+    </div>
+   
+    <!--HTML Id-->
+    <div>
+      <!--Style an element with a specific id-->
+      <style>
+          #myHeader {
+              background-color: lightblue;
+              color: black;
+              padding: 40px;
+              text-align: center;
+          } 
+          </style>
+
+      <!--Difference between class and id set up simple webpage-->
+      <style>
+          /* Style the element with the id "myHeader" */
+          #myHeader {
+              background-color: lightblue;
+              color: black;
+              padding: 40px;
+              text-align: center;
+          }
+          
+          /* Style all elements with the class name "city" */
+          .city {
+              background-color: tomato;
+              color: white;
+              padding: 10px;
+          } 
+          </style>
+
+    </div>
+   
+    <!--HTML Layout this straight up is the site layout-->
+    <!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float-->
+    <div>
+    <!--Layout using float-->
+    <style>
+        div.container {
+            width: 100%;
+            border: 1px solid gray;
+        }
+        
+        header, footer {
+            padding: 1em;
+            color: white;
+            background-color: black;
+            clear: left;
+            text-align: center;
+        }
+        
+        nav {
+            float: left;
+            max-width: 160px;
+            margin: 0;
+            padding: 1em;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+           
+        nav ul a {
+            text-decoration: none;
+        }
+        
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+        </style>
+
+    <!--Layout using flexbox-->
+    <style> 
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;  
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            text-align: center;
+        }
+        
+        .flex-container > * {
+            padding: 15px;
+            -webkit-flex: 1 100%;
+            flex: 1 100%;
+        }
+        
+        .article {
+            text-align: left;
+        }
+        
+        header {background: black;color:white;}
+        footer {background: #aaa;color:white;}
+        .nav {background:#eee;}
+        
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .nav ul a {
+            text-decoration: none;
+        }
+        
+        @media all and (min-width: 768px) {
+            .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+            .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+            footer {-webkit-order:3;order:3;}
+        }
+        </style>
+
+    <!--Layout using flexbox 2-->
+    <style> 
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;  
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .flex-container > * {
+            padding: 10px;
+            flex: 1 100%;
+        }
+        
+        .main {
+            text-align: left;
+            background: cornflowerblue;
+        }
+        
+        .header {background: coral;}
+        .footer {background: lightgreen;}
+        .aside {background: moccasin;}
+        
+        @media all and (min-width: 768px) {
+            .aside { flex: 1 auto; }
+            .main    { flex: 3 0px; }
+            .aside { order: 1; } 
+            .main    { order: 2; }
+            .footer  { order: 4; }
+        }
+        </style>
+
+    <!--Layout using flexbox 3-->
+    <style> 
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;  
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .flex-container > * {
+            padding: 10px;
+            flex: 1 100%;
+        }
+        
+        .main {
+            text-align: left;
+            background: cornflowerblue;
+        }
+        
+        .header {background: coral;}
+        .footer {background: lightgreen;}
+        .aside1 {background: moccasin;}
+        .aside2 {background: violet;}
+        
+        @media all and (min-width: 768px) {
+            .aside { flex: 1 auto; }
+            .main    { flex: 3 0px; }
+            .aside1 { order: 1; } 
+            .main    { order: 2; }
+            .aside2 { order: 3; }
+            .footer  { order: 4; }
+        }
+        </style>
+
+    </div>
+  
+    <!--HTML head Elements-->
+    <div>
+     
+    <!--The <title> element defines the document title-->
+        <title>Page Title</title>
+
+    <!--The <style> element contains style information-->
+        <title>Page Title</title>
+        <style>
+          body {background-color: powderblue;}
+          h1 {color: red;}    
+          p {color: blue;}
+        </style>
+
+    <!--The <link> element defines a relationship to an external resource-->
+    <title>Page Title</title>
+    <link rel="stylesheet" href="mystyle.css">
+
+    <!--The <meta> element defines special meta information-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
+
+    <!--The <script> element defines client-side JavaScripts-->
+        <title>Page Title</title>
+        <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+        </script>
+
+    <!--The <base> element defines the base URL for all URLs-->
+    <title>Page Title</title>
+    <base href="https://www.w3schools.com/images/" target="_blank">
+
+    </div>
+    
+    <!--HTML5 Local Storage-->
+    <div>
+  
+      <!--Store a counter permanently-->
+    <script>
+        function clickCounter() {
+            if(typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+        </script>
+  
+      <!--Store a counter for one session-->
+        <script>
+        function clickCounter() {
+            if(typeof(Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+                } else {
+                    sessionStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+        </script>
+    </div>
+   
+    <!--More HTML5 Examples-->
+    <div>
+      <!--HTML5 drag and drop-->
+      <style>
+          #div1 {
+              width: 350px;
+              height: 70px;
+              padding: 10px;
+              border: 1px solid #aaaaaa;
+          }
+          </style>
+          <script>
+          function allowDrop(ev) {
+              ev.preventDefault();
+          }
+          
+          function drag(ev) {
+              ev.dataTransfer.setData("text", ev.target.id);
+          }
+          
+          function drop(ev) {
+              ev.preventDefault();
+              var data = ev.dataTransfer.getData("text");
+              ev.target.appendChild(document.getElementById(data));
+          }
+          </script>  
+    </div>
+  
+    </div>
+
+</head>
+
+<body>
+  <!--this holds (simple) text, list, picture, button, links information-->
+  <div>
+
+    <!-- button -->
+    <button>Click me</button>
+
+    <!--(option1)Mouse over this paragraph, to display the title attribute as a tooltip.-->
+    <h2 title="I'm a header">The title Attribute</h2>
+    <p title="I'm a tooltip">
+      Mouse over this paragraph, to display the title attribute as a tooltip.
+    </p>
+
+    <!--(Option2)Mouse over for first word-->
+    <h1>About W3Schools</h1>
+    <p title=About W3Schools>
+      You cannot omit quotes around an attribute value if the value contains spaces.
+    </p>
+    <p>
+      <b>
+        If you move the mouse over the paragraph above, your browser will only display the first word from the title.
+      </b>
+    </p>
+
+
+
+    <!-- image -->
+    <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+    <!-- links -->
+    <a href="https://www.w3schools.com/html/html_examples.asp">HTML Examples</a>
+    <h1>This is heading 1</h1>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+
+    <!--truth about lines in code-->
+    <!--(option 1 text)-->
+    <p>
+      This paragraph contains a lot of spaces in the source code, but the browser ignores it.
+    </p>
+    <p>
+      The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number
+      of lines in this paragraph will change.
+    </p>
+
+    <!--(option 2 text)-->
+    <p>This is
+      <br>a paragraph
+      <br>with line breaks</p>
+
+    <!--(option 3 text)-->
+    <p>The pre tag preserves both spaces and line breaks:</p>
+
+    <pre>
+             My Bonnie lies over the ocean.
+      
+             My Bonnie lies over the sea.
+      
+             My Bonnie lies over the ocean.
+         
+             Oh, bring back my Bonnie to me.
+          </pre>
+
+
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <!--lists-->
+    <h2>An Unordered HTML List</h2>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <h2>An Ordered HTML List</h2>
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <!--(option 1 for pictures) Images in HTML have a set of size attributes, which specifies the width and height of the image:-->
+    <h2>Size Attributes</h2>
+    <p>Images in HTML have a set of size attributes, which specifies the width and height of the image:</p>
+    <img src="img_girl.jpg" width="500" height="600">
+
+    <!--option 2 The alt attribute should reflect the image content, so users who cannot see the image gets an understanding of what the image contains:-->
+
+    <h2>The alt Attribute</h2>
+    <p>The alt attribute should reflect the image content, so users who cannot see the image gets an understanding of what the
+      image contains:</p>
+
+    <img src="img_girl.jpg" alt="Girl with a jacket" width="500" height="600">
+
+  </div>
+
+  <!--HTML Formatting Tools Body-->
+  <div>
+    <!--HTML Styles-->
+    <div>
+      <!--Color change-->
+      <p>I am normal</p>
+      <p style="color:red;">I am red</p>
+      <p style="color:blue;">I am blue</p>
+      <!--(Option 1)Size change-->
+      <p style="font-size:50px;">I am big</p>
+      <!--(option2) size change-->
+      <h1 style="font-size:300%;">This is a heading</h1>
+      <p style="font-size:160%;">This is a paragraph.</p>
+      <!--Font change-->
+      <h1 style="font-family:verdana;">This is a heading</h1>
+      <p style="font-family:courier;">This is a paragraph.</p>
+      <!--Alignment of text-->
+      <h1 style="text-align:center;">Centered Heading</h1>
+      <p style="text-align:center;">Centered paragraph.</p>
+    </div>
+    <!--HTML Text Formatting-->
+    <div>
+      <!--bold-->
+      <p>
+        <b>This text is bold.</b>
+      </p>
+      <!--strong-->
+      <p>
+        <strong>This text is strong.</strong>
+      </p>
+      <!--italics-->
+      <p>
+        <i>This text is italic.</i>
+      </p>
+      <!--emphasized-->
+      <p>
+        <em>This text is emphasized.</em>
+      </p>
+      <!--this can cut size with in a text line-->
+      <h2>HTML
+        <small>Small</small> Formatting</h2>
+      <!--highlighted-->
+      <h2>HTML
+        <mark>Marked</mark> Formatting</h2>
+      <!--delete in the middle of the string-->
+      <p>My favorite color is
+        <del>blue</del> red.</p>
+      <!--underline-->
+      <p>My favorite
+        <ins>color</ins> is red.</p>
+      <!--The del element represent deleted (removed) text. The ins element represent inserted (added) text.-->
+      The del element represent deleted (removed) text. The ins element represent inserted (added) text.
+      <p>My favorite color is
+        <del>blue</del>
+        <ins>red</ins>.</p>
+      <!--subscript-->
+      <p>This is
+        <sub>subscripted</sub> text.</p>
+      <!--superscript-->
+      <p>This is
+        <sup>superscripted</sup> text.</p>
+    </div>
+    <!--HTML Quotations and Citations-->
+    <div>
+      <!--Browsers usually insert quotation marks around the q element.-->
+      <p>WWF's goal is to:
+        <q>Build a future where people live in harmony with nature.</q>
+      </p>
+      <!--Browsers usually indent blockquote elements.-->
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100
+        countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+      </blockquote>
+      <!--The HTML address element defines contact information (author/owner) of a document or article.-->
+      <address>
+        Written by John Doe.
+        <br> Visit us at:
+        <br> Example.com
+        <br> Box 564, Disneyland
+        <br> USA
+      </address>
+      <!--Marking up abbreviations can give useful information to browsers, translation systems and search-engines.-->
+      <p>The
+        <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+      <!--The HTML cite element defines the title of a work.-->
+      <img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+      <p>
+        <cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+      <!--If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl)-->
+      <bdo dir="rtl">This line will be written from right to left</bdo>
+      <!--ex: This line will be written from right to left-->
+    </div>
+    <!--HTML Comments-->
+    <div>
+      <!--smart idea for turning on and off script-->
+      <!-- Do not display this at the moment
+        <img border="0" src="pic_trulli.jpg" alt="Trulli">-->
+    </div>
+    <!--HTML CSS Body Script-->
+    <div>
+      <!--HTML with inline CSS-->
+      <h1 style="color:blue;">This is a Blue Heading</h1>
+      <!--HTML with internal CSS-->
+      <!--
+         <h1>This is a heading</h1>
+         <p>This is a paragraph.</p>
+          -->
+      <!--HTML with external CSS-->
+      <h1>This is a heading</h1>
+      <p>This is a paragraph.</p>
+      <!--HTML with CSS fonts-->
+      <h1>This is a heading</h1>
+      <p>This is a paragraph.</p>
+      <!--HTML with CSS using the id attribute-->
+      <!--    
+           <p>This is a paragraph.</p>
+           <p>This is a paragraph.</p>
+           <p id="p01">I am different.</p>
+          -->
+      <!--HTML with CSS using the class attribute-->
+
+      <!--
+          
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+          <p class="error">I am different.</p>
+          <p>This is a paragraph.</p>
+          <p class="error">I am different too.</p>
+          
+           -->
+      <!--HTML and CSS borders-->
+
+      <!--
+          
+          <h1>This is a heading</h1>
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+          
+        -->
+      <!--HTML and CSS padding-->
+
+      <!--    
+          <h1>This is a heading</h1>
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+        -->
+      <!--HTML and CSS margin-->
+      <!-- 
+          <h1>This is a heading</h1>
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+          <p>This is a paragraph.</p>
+         -->
+      <!--HTML and CSS full demo-->
+      <!--
+          <div style="position:relative;">
+            <div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:300px;height:150px;background-color:#40B3DF"></div>
+            <div style="opacity:0.3;position:absolute;left:120px;top:20px;width:100px;height:170px;background-color:#73AD21"></div>
+            <div style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+              <h1>CSS = Styles and Colors</h1>
+              <div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:25px;">Manipulate Text</div>
+              <div style="color:#40B3DF;letter-spacing:12px;font-size:15px;position:relative;left:25px;top:30px;">Colors,
+              <span style="background-color:#B4009E;color:#ffffff;"> Boxes</span></div>
+            </div>
+          </div>
+        -->
+    </div>
+  </div>
+ 
+  <!--Items you can insert Body-->
+  <div>
+    <!--HTML Links-->
+    <div>
+      <!--Linking, using an absolute URL-->
+      <h2>HTML Links</h2>
+      <p>
+      <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+      </p>
+
+      <!--Linking, using a relative URL-->
+       <h2>Local Links</h2>
+        <p>
+        <a href="html_images.asp">HTML Images</a> is a link to a page on this website.</p>
+        <p>
+        <a href="https://www.w3.org/">W3C</a> is a link to a website on the World Wide Web.</p>
+
+      <!--Changing the color of links-->
+      <h2>Link Colors</h2>
+      <p>You can change the default colors of links</p>
+      <a href="html_images.asp" target="_blank">HTML Images</a>
+
+      <!--Removing the underline from links-->
+      <a href="html_images.asp" style="text-decoration:none">HTML Images</a>
+      
+      <!--Changing the target of a link-->
+      <h2>The target Attribute</h2>
+      <a href="https://www.w3schools.com/html/" target="_blank">Visit our HTML tutorial!</a> 
+      <p>If you set the target attribute to "_blank", the link will open in a new browser window or tab.</p>
+
+      <!--An image as a link-->
+      <h2>Image Links</h2>
+      <p>The image is a link. You can click on it.</p>
+      <a href="default.asp">
+      <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0">
+      </a>
+      <p>We have added "border:0" to prevent IE9 (and earlier) from displaying a border around the image.</p>
+
+
+      <!--Creating a bookmark link-->
+        <p><a href="#C4">Jump to Chapter 4</a></p>
+        <h2>Chapter 1</h2>
+        <p>This chapter explains ba bla bla</p>
+        <h2>Chapter 2</h2>
+        <p>This chapter explains ba bla bla</p>
+        <h2>Chapter 3</h2>
+        <p>This chapter explains ba bla bla</p>
+        <h2 id="C4">Chapter 4</h2>
+        <p>This chapter explains ba bla bla</p>
+
+      <!--A link that breaks out of a frame-->
+      <p>Locked in a frame? <a href="https://www.w3schools.com/html/" target="_top">Click here!</a></p>
+     
+      <!--A mailto link-->
+      <p>
+      This is an email link:
+      <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+      Send Mail</a>
+      </p>  
+      <p>The link will only work if you have email installed.</p> 
+      <p>(Spaces between words should be replaced by %20 to ensure that the browser will display the text properly)</p>
+          
+      <!--A mailto link with subject-->
+          <p>
+           This is another mailto link:
+           <a href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!"
+           target="_top">Send mail!</a>
+          </p>
+          <p>The link will only work if you have email installed.</p>
+          <p>(Spaces between words should be replaced by %20 to ensure that the browser will display the text properly)</p>
+    </div>
+
+    <!--HTML Images-->
+    <div>
+      <!--An image-->
+      <h2>Italian Trulli</h2>
+      <img src="pic_trulli.jpg" alt="Italian Trullti" style="width:100%">
+     
+      <!--An image height and width using attributes-->
+      <h2>Image Size</h2>
+      <p>In this example, we specify the width and height of an image with the width and height attributes:</p>
+      <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+      
+      <!--An image height and width using CSS-->
+      <h2>Image Size</h2>
+      <p>Use the style attribute to specify the width and height of an image:</p>
+      <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+      <!--An image height and width using both-->
+      <h2>Styling Images</h2>
+      <p>The image below has the width attribute set to 128 pixels, but the stylesheet overrides it, and sets the width to 100%.</p>
+      <img src="html5.gif" alt="HTML5 Icon" width="128" height="128">      
+      <p>The image below uses the style attribute, where the width is set to 128 pixels which overrides the stylesheet:</p>
+      <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+      <!--An image in another folder-->
+      <h2>Images in Another Folder</h2>
+      <p>It is common to store images in a sub-folder. You must then include the folder name in the src attribute:</p>      
+      <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+      <!--An image with a broken link-->
+      <p>If a browser cannot find an image, it will display the alternate text:</p>
+      <img src="wrongname.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+      <!--An image on another server-->
+      <h2>Images on Another Server</h2>
+      <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="width:104px;height:142px;">
+
+      <!--Using an image as a link-->
+      <h2>Image as a Link</h2>
+      <p>The image is a link. You can click on it.</p>
+      <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+      </a>      
+      <p>Add "border:0;" to prevent IE9 (and earlier) from displaying a border around the image.</p>
+
+      <!--A moving image-->
+      <h2>Animated Images</h2>
+      <p>The GIF standard allows moving images.</p>      
+      <img src="programming.gif" alt="Computer man" style="width:48px;height:48px;">
+     
+      <!--An image map with clickable regions-->
+
+      <h2>Image Maps</h2>
+      <p>Click on the sun or on one of the planets to watch it closer:</p>
+      
+      <img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+      
+      <map name="planetmap">
+        <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+        <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+        <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+      </map>
+      
+      <!--A floating image-->
+
+      <h2>Floating Images</h2>
+      <p><strong>Float the image to the right:</strong></p>      
+      <p>
+      <img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+      A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+      </p>      
+      <p><strong>Float the image to the left:</strong></p>
+      <p>
+      <img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+      A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.  
+      </p>
+
+    </div>
+
+    <!--HTML Tables-->
+    <div>
+      <!--Basic HTML tables-->
+      <h2>HTML Tables</h2>
+      <p>HTML tables start with a table tag.</p>
+      <p>Table rows start with a tr tag.</p>
+      <p>Table data start with a td tag.</p>      
+      <hr>
+      <h2>1 Column:</h2>      
+      <table>
+        <tr>
+          <td>100</td>
+        </tr>
+      </table>      
+      <hr>
+      <h2>1 Row and 3 Columns:</h2>
+      <table>
+        <tr>
+          <td>100</td>
+          <td>200</td>
+          <td>300</td>
+        </tr>
+      </table>      
+      <hr>
+      <h2>3 Rows and 3 Columns:</h2>
+      <table>
+        <tr>
+          <td>100</td>
+          <td>200</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>400</td>
+          <td>500</td>
+          <td>600</td>
+        </tr>
+        <tr>
+          <td>700</td>
+          <td>800</td>
+          <td>900</td>
+        </tr>
+      </table>      
+      <hr>      
+
+      <!--A table with borders-->
+      <h2>Bordered Table</h2>
+      <p>Use the CSS border property to add a border to the table.</p>      
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>      
+
+      <!--A table with collapsed borders-->
+      <h2>Collapsed Borders</h2>
+      <p>If you want the borders to collapse into one border, add the CSS border-collapse property.</p>      
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>      
+
+      <!--A table with cell padding-->
+      <h2>Cellpadding</h2>
+      <p>Cell padding specifies the space between the cell content and its borders.</p>      
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>      
+      <p>Try to change the padding to 5px.</p>      
+
+      <!--A table with headings-->
+      <table style="width:100%">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>        
+
+      <!--A table with left-aligned headings-->
+      <h2>Left-align Headings</h2>
+      <p>To left-align the table headings, use the CSS text-align property.</p>      
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+      
+      <!--Horizontal/Vertical table column table headings-->
+
+      <h2>Horizontal Headings:</h2>
+
+      <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <th>Telephone</th>
+          <th>Telephone</th>
+        </tr>
+        <tr>
+          <td>Bill Gates</td>
+          <td>555 77 854</td>
+          <td>555 77 855</td>
+        </tr>
+      </table>
+      
+      <h2>Vertical Headings:</h2>
+      
+      <table style="width:100%">
+        <tr>
+          <th>Name:</th>
+          <td>Bill Gates</td>
+        </tr>
+        <tr>
+          <th>Telephone:</th>
+          <td>555 77 854</td>
+        </tr>
+        <tr>
+          <th>Telephone:</th>
+          <td>555 77 855</td>
+        </tr>
+      </table>
+
+      <!--A table with a caption-->
+      <h2>Table Caption</h2>
+      <p>To add a caption to a table, use the caption tag.</p>      
+      <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$50</td>
+        </tr>
+      </table>
+      
+
+      <!--Table cells that span more than one column-->
+      <h2>Cell that spans two columns</h2>
+      <p>To make a cell span more than one column, use the colspan attribute.</p>      
+      <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+          <td>Bill Gates</td>
+          <td>55577854</td>
+          <td>55577855</td>
+        </tr>
+      </table>
+
+      <!--Table cells that span more than one row-->
+      <h2>Cell that spans two rows</h2>
+      <p>To make a cell span more than one row, use the rowspan attribute.</p>      
+      <table style="width:100%">
+        <tr>
+          <th>Name:</th>
+          <td>Bill Gates</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Telephone:</th>
+          <td>55577854</td>
+        </tr>
+        <tr>
+          <td>55577855</td>
+        </tr>
+      </table>      
+
+      <!--A table with cell spacing-->
+      <h2>Border Spacing</h2>
+      <p>Border spacing specifies the space between the cells.</p>      
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>      
+      <p>Try to change the border-spacing to 5px.</p>
+      
+
+      <!--A table with HTML tags inside-->
+      <table>
+          <tr>
+            <td>
+              <p>This is a paragraph</p>
+              <p>This is another paragraph</p>
+            </td>
+            <td>This cell contains a table:
+              <table>
+                <tr>
+                  <td>A</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <td>C</td>
+                  <td>D</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>This cell contains a list
+              <ul>
+                <li>apples</li>
+                <li>bananas</li>
+                <li>pineapples</li>
+              </ul>
+            </td>
+            <td>HELLO</td>
+          </tr>
+        </table>        
+
+      <!--Tables with different style using id I-->
+      <h2>Styling Tables</h2>
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+      <br>      
+      <table id="t01">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+      
+
+      <!--Tables with different style using id II-->
+      <h2>Styling Tables</h2>
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+      <br>      
+      <table id="t01">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>      
+
+      <!--Tables with different style using class I-->
+      <table style="width:100%">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>        
+        <br>        
+        <table class="names">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>
+        
+      <!--Tables with different style using class II-->
+
+      <table>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>
+        
+        <br>
+        
+        <table class="names">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>
+        
+
+    </div>
+   
+    <!--HTML Lists-->
+    <div>
+      <!--An unordered list (default)-->
+      <h2>An unordered HTML list</h2>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>  
+
+      <!--An unordered list with disc bullets-->
+      <h2>Unordered List with Disc Bullets</h2>
+      <ul style="list-style-type:disc">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>      
+        
+      <!--An unordered list with circle bullets-->
+      <h2>Unordered List with Circle Bullets</h2>
+      <ul style="list-style-type:circle">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>  
+
+      <!--An unordered list with square bullets-->
+      <h2>Unordered List with Square Bullets</h2>
+      <ul style="list-style-type:square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <!--An unordered list without bullets-->
+      <h2>Unordered List without Bullets</h2>
+      <ul style="list-style-type:none">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>  
+
+      <!--An ordered list (default)-->
+      <h2>An ordered HTML list</h2>
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>        
+
+      <!--An ordered list with numbers-->
+      <h2>Ordered List with Numbers</h2>
+      <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>  
+
+      <!--An ordered list with letters-->
+      <h2>Ordered List with Letters</h2>
+      <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>  
+
+      <!--An ordered list with lowercase letters-->
+      <h2>Ordered List with Lowercase Letters</h2>
+      <ol type="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>  
+
+      <!--An ordered list with roman numbers-->
+      <h2>Ordered List with Roman Numbers</h2>
+      <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol> 
+
+      <!--An ordered list with lowercase roman numbers-->
+      <h2>Ordered List with Lowercase Roman Numbers</h2>
+      <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>  
+
+      <!--A description list-->
+      <h2>A Description List</h2>
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+
+      <!--A nested list I-->
+      <h2>A Nested List</h2>
+      <p>List can be nested (lists inside lists):</p>      
+      <ul>
+        <li>Coffee</li>
+        <li>Tea
+          <ul>
+          <li>Black tea</li>
+          <li>Green tea</li>
+          </ul>
+        </li>
+        <li>Milk</li>
+      </ul>      
+
+      <!--A nested list II-->
+      <h2>A Nested List</h2>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea
+          <ul>
+          <li>Black tea</li>
+          <li>Green tea
+            <ul>
+            <li>China</li>
+            <li>Africa</li>
+            </ul>
+          </li>
+          </ul>
+        </li>
+        <li>Milk</li>
+      </ul>
+
+      <!--A horizontal list-->
+      <h2>Horizontal List</h2>
+      <ul id="menu">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+      </ul>        
+
+      <!--A horizontal list menu-->
+      <h2>Navigation Menu</h2>
+      <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>      
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      
+    </div>
+    
+    <!--HTML Block and inline elements-->
+    <div>
+      <!--Styling <div> elements-->
+          <div style="background-color:black;color:white;padding:20px;">
+              <h2>London</h2>
+              <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+              <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+            </div>         
+      
+            <!--Styling <span> elements-->
+          <h1>My <span style="color:red">Important</span> Heading</h1>
+
+    </div>
+  </div>
+
+  <!--The rest body for basics-->
+  <div>
+ 
+    <!--HTML Classes-->
+  <div>
+    <!--Style all elements with a specified class name-->
+    <h2>The class Attribute</h2>
+    <p>Use CSS to style an element with the class name "cities":</p>    
+    <div class="cities">
+      <h2>London</h2>
+      <p>London is the capital of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </div>     
+
+    <!--Access elements with a specified class name, with JavaScript-->
+    <div class="cities">
+        <h2>London</h2>
+        <p>London is the capital of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+        </div>         
+        <div class="cities">
+        <h2>Paris</h2>
+        <p>Paris is the capital and most populous city of France.</p>
+        <p>Situated on the Seine River, it is at the heart of the Île-de-France region, also known as the région parisienne.</p>
+        <p>Within its metropolitan area is one of the largest population centers in Europe, with over 12 million inhabitants.</p>
+        </div>        
+        <div class="cities">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+        <p>It is the seat of the Japanese government and the Imperial Palace, and the home of the Japanese Imperial Family.</p>
+        <p>The Tokyo prefecture is part of the world's most populous metropolitan area with 38 million people and the world's largest urban economy.</p>
+        </div>
+        
+    <!--Multiple classes-->
+    <h1>My <span class="note">Important</span> Heading</h1>
+    <p>This is some <span class="note">important</span> text.</p>
+
+    <!--Same class, different tag-->
+    <h2>Same Class, Different Tag</h2>
+    <p>Even if the two elements do not have the same tag name, they can have the same class name, and get the same styling:</p>    
+    <h2 class="city">Paris</h2>
+    <p class="city">Paris is the capital of France.</p>
+
+  </div>
+ 
+  <!--HTML Id-->
+  <div>
+    <!--Style an element with a specific id-->
+    <h2>The id Attribute</h2>
+    <p>Use CSS to style an element with the id "myHeader":</p>
+    <h1 id="myHeader">My Header</h1>    
+   
+    <!--Difference between class and id set up simple webpage-->
+    <h2>Difference Between Class and ID</h2>
+    <p>An HTML page can only have one unique id applied to one specific element, while a class name can be applied to multiple elements.</p>    
+         <!-- A unique element -->
+    <h1 id="myHeader">My Cities</h1>    
+         <!-- Multiple similar elements -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>    
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>    
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+   
+    <!--Access an element with a specific id, with JavaScript-->
+    <h2>Using The id Attribute in JavaScript</h2>
+    <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>    
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>    
+    <script>
+    function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    }
+    </script>
+    
+
+  </div>
+  
+  <!--HTML Layout this straight up is the site layout-->
+  <div>
+    <!--Layout using float-->
+    <div class="container">
+        <header>
+           <h1>City Gallery</h1>
+        </header>          
+        <nav>
+          <ul>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Tokyo</a></li>
+          </ul>
+        </nav>
+        
+        <article>
+          <h1>London</h1>
+          <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+        </article>
+        
+        <footer>Copyright &copy; W3Schools.com</footer>
+        
+        </div>
+        
+
+    <!--Layout using flexbox-->
+    <div class="flex-container">
+        <header>
+          <h1>City Gallery</h1>
+        </header>
+        
+        <nav class="nav">
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+        </nav>
+        
+        <article class="article">
+          <h1>London</h1>
+          <p>London is the capital city of England. It is the most populous city in the United Kingdom,
+          with a metropolitan area of over 13 million inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement for two millennia,
+          its history going back to its founding by the Romans, who named it Londinium.</p>
+          <p><strong>Resize this page to see what happens!</strong></p>
+        </article>
+        
+        <footer>Copyright &copy; W3Schools.com</footer>
+        </div>
+        
+
+    <!--Layout using flexbox 2-->
+    <div class="flex-container">
+        <header class="header">Header</header>
+        <aside class="aside">Aside</aside>
+        <article class="main">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+        </article>
+        <footer class="footer">Footer</footer>
+      </div>
+      
+
+    <!--Layout using flexbox 3-->
+    <div class="flex-container">
+        <header class="header">Header</header>
+        <aside class="aside aside1">Aside 1</aside>
+        <article class="main">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+        </article>
+        <aside class="aside aside2">Aside 2</aside>
+        <footer class="footer">Footer</footer>
+      </div>
+      
+
+  </div>
+ 
+  <!--HTML IFrame-->
+  <div>
+    <!--Inline frame (a frame inside an HTML page)-->
+    <h2>HTML Iframes</h2>
+    <p>An iframe is used to display a web page within a web page:</p>    
+    <iframe src="demo_iframe.htm"></iframe>
+  </div>
+ 
+  <!--HTML head Elements-->
+  <div>
+    <!--The <title> element defines the document title-->
+        <p>The content of the body element is displayed in the browser window.</p>
+        <p>The content of the title element is displayed in the browser tab, in favorites and in search engine results.</p>
+
+    <!--The <style> element contains style information-->
+        <h1>This is a Heading</h1>
+        <p>This is a paragraph.</p>
+
+    <!--The <link> element defines a relationship to an external resource-->
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+
+    <!--The <meta> element defines special meta information-->
+    <p>All meta information goes before the body.</p>
+
+
+    <!--The <script> element defines client-side JavaScripts-->
+        <h1>My Web Page</h1>
+        <p id="demo">A Paragraph</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+        
+
+    <!--The <base> element defines the base URL for all URLs (where to look for an image)-->
+    <img src="html5.gif">
+    <p>Since we have specified a base URL, the browser will look for the image "html5.gif" at "https://www.w3schools.com/images/html5.gif"</p>    
+    <p><a href="https://www.w3schools.com">W3Schools</a></p>
+    <p>The link above opens in a new window. This is because the base target is set to "_blank".</p>
+    
+
+  </div>
+ 
+  <!--HTML Scripts-->
+  <div>
+      <!--Insert a script-->
+      <h2>Use JavaScript to Change Text</h2>
+      <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>      
+      <p id="demo"></p>      
+      <script>
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      </script>       
+  
+      <!--Use of the <noscript> tag-->
+          <p id="demo"></p>
+          <script>
+          document.getElementById("demo").innerHTML = "Hello JavaScript!";
+          </script>          
+          <noscript>Sorry, your browser does not support JavaScript!</noscript>          
+          <p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+             
+
+  </div>
+ 
+  <!--HTML Computercode Elements (code online use programming)-->
+  <div>
+    <!--Keyboard input formatting using the <kbd> element-->
+    <h2>The kbd Element</h2>
+    <p>The kbd element represents user input:</p>    
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+    <!--Computer output formatting using the <samp> element-->
+    <h2>The samp Element</h2>
+    <p>The samp element represents output from a program or computing system:</p>    
+    <p>If you input wrong value, the program will return <samp>Error!</samp></p>
+
+    <!--Programming code formatting using the <code> element-->
+        <h2>The code Element</h2>
+        <p>Programming code example:</p>        
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>        
+
+    <!--Programming code formatting preserving whitespace and line-breaks-->
+    <p>The code element does not preserve whitespace and line-breaks.</p>
+    <p>To fix this, you can put the code element inside a pre element:</p>    
+    <pre>
+    <code>
+    x = 5;
+    y = 6;
+    z = x + y;
+    </code>
+    </pre>    
+
+    <!--Variable formatting using the <var> element-->
+        <h2>The var Element</h2>
+        <p>Einstein wrote: <var>E</var> = <var>mc</var><sup>2</sup>.</p>
+        
+
+  </div>
+
+  </div>
+
+  <!--Sign-in html interactivity basics input based probs need php (important fill out website)-->
+  <div>
+  <!--HTML Forms-->
+  <div>
+    <!--Form with text input-->
+    <h2>Text Input</h2>
+    <form>
+      First name:<br>
+      <input type="text" name="firstname">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname">
+    </form>    
+    <p>Note that the form itself is not visible.</p>    
+    <p>Also note that the default width of a text input field is 20 characters.</p>
+    
+
+    <!--Form with radio button input-->
+    <h2>Radio Buttons</h2>
+    <form>
+      <input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other  
+    </form> 
+
+    <!--Form with text fields and a submit button-->
+    <h2>HTML Forms</h2>
+    <form action="/action_page.php">
+      First name:<br>
+      <input type="text" name="firstname" value="Mickey">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>     
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    
+
+    <!--Form with a text fields without a name attribute-->
+    <h2>The name Attribute</h2>
+    <form action="/action_page.php">
+      First name:<br>
+      <input type="text" value="Mickey">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>     
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>    
+    <p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>    
+
+    <!--Grouping Form Data-->
+    <h2>Grouping Form Data with Fieldset</h2>
+    <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>    
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+  </div>
+ 
+  <!--HTML Form Elements (this can bring your nav bar to life)-->
+  <div>
+    <!--A simple drop-down list-->
+    <h2>The select Element</h2>
+    <p>The select element defines a drop-down list:</p>
+   
+    <form action="/action_page.php">
+      <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br><br>
+      <input type="submit">
+    </form>
+
+    <!--A drop-down list with a pre-selected value (all below this: This tutorial will not teach you how servers are processing input. Processing input is explained in our PHP tutorial.)-->
+    <h2>Pre-selected Option</h2>
+    <p>You can preselect an option with the selected attribute.</p>
+    
+    <form action="/action_page.php">
+      <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br><br>
+      <input type="submit">
+    </form>
+    
+
+    <!--A drop-down list with a pre-selected value-->
+    <h2>Textarea</h2>
+    <p>The textarea element defines a multi-line input field.</p>
+    
+    <form action="/action_page.php">
+      <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+      <br>
+      <input type="submit">
+    </form>
+
+    <!--An input button-->
+    <h2>The button Element</h2>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <!--Using the <datalist> Element-->
+        <h2>The datalist Element</h2>
+        <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+        
+        <form action="/action_page.php">
+          <input list="browsers" name="browser">
+          <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+          <input type="submit">
+        </form>
+        
+        <p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+    <!--Using the <output> Element-->
+        <h2>The output Element</h2>
+        <p>The output element represents the result of a calculation.</p>
+        
+        <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          0
+          <input type="range" id="a" name="a" value="50">
+          100 +
+          <input type="number" id="b" name="b" value="50">
+          =
+          <output name="x" for="a b"></output>
+          <br><br>
+          <input type="submit">
+        </form>
+        
+        <p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
+
+  </div>
+ 
+  <!--HTML Input Types (this can help make a form for people to put info into a calendar-->
+  <div>
+    <!--Input type text-->
+    <h2>Text field</h2>
+    <p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
+    
+    <form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+    <br><br>
+    <input type="submit">
+    </form>
+    
+    <p>Note that the form itself is not visible.</p>
+    <p>Also note that the default width of a text field is 20 characters.</p>
+    
+
+    <!--Input type password-->
+    <h2>Password field</h2>
+    <p>The <strong>input type="password"</strong> defines a password field:</p>
+    
+    <form action="">
+    User name:<br>
+    <input type="text" name="userid">
+    <br>
+    User password:<br>
+    <input type="password" name="psw">
+    </form>
+    
+    <p>The characters in a password field are masked (shown as asterisks or circles).</p>
+
+    <!--Input type radio-->
+    <h2>Radio Buttons</h2>
+    <p>The <strong>input type="radio"</strong> defines a radio button:</p>    
+    <form action="/action_page.php">
+      <input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other<br><br>
+      <input type="submit">
+    </form> 
+    
+
+    <!--Input type checkbox-->
+    <h2>Checkboxes</h2>
+    <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>    
+    <form action="/action_page.php">
+    <input type="checkbox" name="vehicle1" value="Bike">I have a bike
+    <br>
+    <input type="checkbox" name="vehicle2" value="Car">I have a car 
+    <br><br>
+    <input type="submit">
+    </form> 
+
+    <!--Input type button-->
+    <h2>Input Button</h2>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+    <!--Input type number - with restrictions-->
+    <h2>Number Field</h2>
+    <p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+    <p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+    
+    <form action="/action_page.php">
+      Quantity (between 1 and 5):
+      <input type="number" name="quantity" min="1" max="5">
+      <input type="submit">
+    </form>
+    
+    <p><b>Note:</b> type="number" is not supported in IE9 and earlier.</p>
+
+    <!--Input type number - with steps-->
+    <h2>Numeric Steps</h2>
+    <p>Depending on browser support:<br>Fixed steps will apply in the input field.</p>    
+    <form action="/action_page.php">
+      Quantity:
+      <input type="number" name="quantity"
+       min="0" max="100" step="10" value="30">
+      <input type="submit">
+    </form>    
+    <p><b>Note:</b>type="number" is not supported in IE9 and earlier.
+    </p>
+    
+
+    <!--Input type date - with date picker-->
+    <h2>Date Field</h2>
+    <p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+    <p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.<p>    
+    <form action="/action_page.php">
+      Birthday:
+      <input type="date" name="bday">
+      <input type="submit">
+    </form>    
+    <p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11 and earlier versions.</p>
+
+    <!--Input type date - with restrictions-->
+    <h2>Date Field Restrictions</h2>
+    <p>Use the min and max attributes to add restrictions to dates:</p>    
+    <form action="/action_page.php">
+    Enter a date before 1980-01-01:<br>
+    <input type="date" name="bday" max="1979-12-31"><br><br>
+    Enter a date after 2000-01-01:<br>
+    <input type="date" name="bday" min="2000-01-02"><br><br>
+    <input type="submit"> 
+    </form>    
+    <p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11 and earlier versions.</p>
+
+    <!--Input type color - with color picker-->
+    <h2>Color Picker</h2>
+    <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+    <p>Depending on browser support:<br>A color picker can pop-up when you enter the input field.</p>    
+    <form action="/action_page.php">
+      Select your favorite color:
+      <input type="color" name="favcolor" value="#ff0000">
+      <input type="submit">
+    </form>    
+    <p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.</p>
+
+    <!--Input type range-->
+    <h2>Range Field</h2>
+    <p>Depending on browser support:<br>The input type "range" can be displayed as a slider control.<p>    
+    <form action="/action_page.php" method="get">
+      Points:
+      <input type="range" name="points" min="0" max="10">
+      <input type="submit">
+    </form>    
+    <p>
+    <b>Note:</b>
+    type="range" is not supported in Internet Explorer 9 and earlier versions.
+    </p>
+    
+
+    <!--Input type month-->
+    <h2>Month Field</h2>
+    <p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
+    <p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+    
+    <form action="/action_page.php">
+      Birthday (month and year):
+      <input type="month" name="bdaymonth">
+      <input type="submit">
+    </form>
+    
+    <p><strong>Note:</strong> type="month" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+
+    <!--Input type week-->
+    <h2>Week Field</h2>
+    <p>The <strong>input type="week"</strong> allows the user to select a week and year:</p>
+    <p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+    
+    <form action="/action_page.php">
+      Select a week:
+      <input type="week" name="year_week">
+      <input type="submit">
+    </form>
+    
+    <p><strong>Note:</strong> type="week" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+
+    <!--Input type time-->
+    <h2>Time Field</h2>
+    <p>The <strong>input type="time"</strong> allows the user to select a time (no time zone):</p>
+    
+    <p>Depending on browser support:<br>A time picker might pop-up when you enter the input field.</p>
+    
+    <form action="/action_page.php">
+      Select a time:
+      <input type="time" name="usr_time">
+      <input type="submit">
+    </form>
+    
+    <p><strong>Note:</strong> type="time" is not supported in Internet Explorer 12 and earlier versions.</p>
+
+    <!--Input type datetime-->
+    <p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+
+    <form action="/action_page.php">
+      Birthday (date and time):
+      <input type="datetime" name="bdaytime">
+      <input type="submit">
+    </form>
+    
+    <p><b>Note:</b> type="datetime" is not supported in Chrome, Firefox, or Internet Explorer.</p>
+
+    <!--Input type datetime-local-->
+    <h2>Local Date Field</h2>
+    <p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+    <p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+    
+    <form action="/action_page.php">
+      Birthday (date and time):
+      <input type="datetime-local" name="bdaytime">
+      <input type="submit" value="Send">
+    </form>
+    
+    <p><strong>Note:</strong> type="datetime-local" is not supported in Firefox, or Internet Explorer 12 and earlier versions.</p>
+
+    <!--Input type email-->
+    <h2>Email Field</h2>
+    <p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
+    
+    <form action="/action_page.php">
+      E-mail:
+      <input type="email" name="email">
+      <input type="submit">
+    </form>
+    
+    <p>
+    <b>Note:</b>type="email" is not supported in IE9 and earlier.</p>
+
+    <!--Input type search-->
+    <h2>Search Field</h2>
+    <p>The <strong>input type="search"</strong> is used for search fields (behaves like a regular text field):</p>
+    
+    <form action="/action_page.php">
+      Search Google:
+      <input type="search" name="googlesearch">
+      <input type="submit">
+    </form>
+
+    <!--Input type tel-->
+    <h2>Telephone Field</h2>
+    <p>The <strong>input type="tel"</strong> is used for input fields that should contain a telephone number:</p>
+    
+    <form action="/action_page.php">
+      Telephone:
+      <input type="tel" name="usrtel">
+      <input type="submit">
+    </form>
+    
+    <p><b>Note:</b> type="tel" is only supported in Safari 8 and newer versions.</p>
+
+    <!--Input type url-->
+    <h2>URL Field</h2>
+    <p>The <strong>input type="url"</strong> is used for input fields that should contain a URL address:</p>
+    
+    <form action="/action_page.php">
+      Add your homepage:
+      <input type="url" name="homepage">
+      <input type="submit">
+    </form>
+    
+    <p><b>Note:</b>
+    The type="url" is not supported in IE9 and earlier versions.</p>
+
+  </div>
+ 
+  <!--HTML Input Attributes-->
+  <div>
+    <!--The autocomplete attribute-->
+    <h2>The autocomplete Attribute</h2>
+
+    <form action="/action_page.php" autocomplete="on">
+      First name:<input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      E-mail: <input type="email" name="email" autocomplete="off"><br>
+      <input type="submit">
+    </form>
+    
+    <p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+    <p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field.</p>
+
+    <!--The novalidate attribute-->
+    <h2>The novalidate Attribute</h2>
+    <p>The novalidate attribute specifies that the form data should not be validated when submitted.</p>
+    
+    <form action="/action_page.php" novalidate>
+    E-mail: <input type="email" name="user_email">
+    <input type="submit">
+    </form>
+    
+    <p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Internet Explorer 9 and earlier versions, or in Safari 10 and earlier versions.</p>
+    
+
+    <!--The autofocus_attribute-->
+    <h2>The autofocus Attribute</h2>
+    <p>The autofocus attribute specifies that the input field should automatically get focus when the page loads.</p>
+    
+    <form action="/action_page.php">
+      First name:<input type="text" name="fname" autofocus><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit">
+    </form>
+    
+    <p><strong>Note:</strong> The autofocus attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+    <!--The form attribute-->
+    <h2>The form Attribute</h2>
+    <p>The form attribute specifies one or more forms an input element belongs to.</p>
+    
+    <form action="/action_page.php" id="form1">
+    First name: <input type="text" name="fname"><br>
+    <input type="submit" value="Submit">
+    </form>
+    
+    <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+    Last name: <input type="text" name="lname" form="form1">
+
+    <!--The formaction attribute-->
+    <h2>The formaction Attribute</h2>
+    <p>The formaction attribute specifies the URL of a file that will process the input control when the form is submitted.</p>
+    
+    <form action="/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit"><br>
+      <input type="submit" formaction="/action_page2.php" value="Submit to another page">
+    </form>
+    
+    <p><strong>Note:</strong> The formaction attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+    <!--The formenctype attribute-->
+    <h2>The formenctype Attribute</h2>
+    <p>The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post").</p>
+    
+    <form action="/action_page_binary.asp" method="post">
+      First name: <input type="text" name="fname"><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+    </form>
+    
+    <p><strong>Note:</strong> The formenctype attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+    
+
+    <!--The formmethod attribute-->
+    <h2>The formmethod Attribute</h2>
+    <p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
+    
+    <form action="/action_page.php" method="get">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formmethod="post" value="Submit using POST">
+    </form>
+    
+    <p><strong>Note:</strong> The formmethod attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+    <!--The formnovalidate attribute-->
+    <h2>The formnovalidate Attribute</h2>
+
+    <form action="/action_page.php">
+      E-mail: <input type="email" name="userid"><br>
+      <input type="submit" value="Submit"><br>
+      <input type="submit" formnovalidate value="Submit without validation">
+    </form>
+    
+    <p><strong>Note:</strong> The formnovalidate attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari 10 and earlier versions.</p>
+
+    <!--The formtarget attribute-->
+    <h2>The formtarget Attribute</h2>
+    <p>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.</p>
+    
+    <form action="/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit as normal">
+      <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+    </form>
+    
+    <p><strong>Note:</strong> The formtarget attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+    <!--The height and width attributes-->
+    <h2>The height and width Attributes</h2>
+    <p>The height and width attributes specify the height and width of an input type="image" element.</p>
+    
+    <form action="/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+    
+    <p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the
+
+    <!--The list attribute-->
+    <form action="/action_page.php">
+      Webpage: <input type="url" list="url_list" name="link">
+      <datalist id="url_list">
+        <option label="W3Schools" value="https://www.w3schools.com">
+        <option label="Google" value="http://www.google.com">
+        <option label="Microsoft" value="http://www.microsoft.com">
+      </datalist>
+      <input type="submit">
+    </form>
+
+    <!--The min and max attributes-->
+    <h2>The min and max Attributes</h2>
+    <p>The min and max attributes specify the minimum and maximum values for an input element.</p>
+    
+    <form action="/action_page.php">
+    
+      Enter a date before 1980-01-01:
+      <input type="date" name="bday" max="1979-12-31"><br>
+    
+      Enter a date after 2000-01-01:
+      <input type="date" name="bday" min="2000-01-02"><br>
+    
+      Quantity (between 1 and 5):
+      <input type="number" name="quantity" min="1" max="5"><br>
+    
+      <input type="submit">
+      
+    </form>
+    
+    <p><strong>Note:</strong> The max and min attributes of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Firefox.</p>
+    <p><strong>Note:</strong> The max and min attributes will not work for dates and time in Internet Explorer 10, since IE 10 does not support these input types.</p>
+
+    <!--The multiple attribute-->
+    <h2>The multiple Attributes</h2>
+    <p>The multiple attribute specifies that the user is allowed to enter more than one value in the input element.</p>
+    
+    <form action="/action_page.php">
+      Select images: <input type="file" name="img" multiple>
+      <input type="submit">
+    </form>
+    
+    <p>Try selecting more than one file when browsing for files.</p>
+    
+    <p><strong>Note:</strong> The multiple attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+    <!--The pattern attribute-->
+    <h2>The pattern Attribute</h2>
+    <p>The pattern attribute specifies a regular expression that the input element's value is checked against.</p>
+    
+    <form action="/action_page.php">
+      Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+      <input type="submit">
+    </form>
+    
+    <p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari 10 and earler versions.</p>
+
+    <!--The placeholder attribute-->
+    <h2>The placeholder Attribute</h2>
+    <p>The placeholder attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).</p>
+    
+    <form action="/action_page.php">
+      <input type="text" name="fname" placeholder="First name"><br>
+      <input type="text" name="lname" placeholder="Last name"><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <p><strong>Note:</strong> The placeholder attribute of the input tag is not supported in Internet Explorer 9 and earlier versions.</p>
+
+    <!--The required attribute-->
+    <h2>The required Attribute</h2>
+    <p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+    
+    <form action="/action_page.php">
+      Username: <input type="text" name="usrname" required>
+      <input type="submit">
+    </form>
+    
+    <p><strong>Note:</strong> The required attribute of the input tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+    <!--The step attribute-->
+    <h2>The step Attribute</h2>
+    <p>The step attribute specifies the legal number intervals for an input element.</p>
+    
+    <form action="/action_page.php">
+      <input type="number" name="points" step="3">
+      <input type="submit">
+    </form>
+    
+    <p><strong>Note:</strong> The step attribute of the input tag is not supported in Internet Explorer 9, and earlier versions.</p>
+
+  </div>
+  </div>
+
+  <!--Html design-->
+  <div>
+  <!--HTML5 Canvas-->
+  <div>
+    <!--Draw on the canvas with JavaScript-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+        Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0,0,150,75);
+        </script>
+        
+
+    <!--Draw a line with lineTo()-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+        </script>
+
+    <!--Draw a circle with arc()-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+        </script> 
+
+    <!--Draw a text with fillText()-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World",10,50);
+        </script>
+
+    <!--Draw a text with strokeText()-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Hello World",10,50);
+        </script>
+
+    <!--Draw a linear gradient-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        // Create gradient
+        var grd = ctx.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+        </script>
+
+    <!--Draw a circular gradient-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        // Create gradient
+        var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+        </script>
+
+    <!--Draw an image with drawImage()-->   
+    <p>Image to use:</p>
+    <img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
+    
+    <p>Canvas to fill:</p>
+    <canvas id="myCanvas" width="250" height="300"
+    style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+    
+    <p><button onclick="myCanvas()">Try it</button></p>
+    
+    <script>
+    function myCanvas() {
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        var img = document.getElementById("scream");
+        ctx.drawImage(img,10,10);
+    }
+    </script>     
+
+  </div>
+ 
+  <!--HTML5 SVG-->
+  <div>
+    <!--SVG Circle-->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40"
+        stroke="green" stroke-width="4" fill="yellow" />
+      Sorry, your browser does not support inline SVG.
+      </svg>
+       
+
+    <!--SVG Rectangle-->
+    <svg width="400" height="100">
+        <rect width="400" height="100" 
+        style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+      Sorry, your browser does not support inline SVG.
+      </svg>
+
+    <!--SVG Rounded Rectangle-->
+    <svg width="400" height="180">
+        <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+      Sorry, your browser does not support inline SVG.
+      </svg>
+      
+
+    <!--SVG Star-->
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+      Sorry, your browser does not support inline SVG.
+      </svg>
+
+    <!--SVG Logo-->
+    <svg height="130" width="500">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"
+            style="stop-color:rgb(255,255,0);stop-opacity:1" />
+            <stop offset="100%"
+            style="stop-color:rgb(255,0,0);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana"
+        x="50" y="86">SVG</text>
+      Sorry, your browser does not support inline SVG.
+      </svg>
+
+  </div>
+  </div> 
+
+<!--Plugin materials-->
+<div>
+  <!--HTML5 Media-->
+  <div>
+    <!--Play Bunny-->
+    <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+      </video>
+      
+      <p>
+      Video courtesy of 
+      <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+      </p>
+
+    <!--Play bear video with controls-->
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+    <!--Play bear video with autoplay-->
+    <video width="320" height="240" autoplay>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      
+      <p><b>Note:</b> The autoplay attribute does not work on some mobile devices.</p>
+    <!--Play Horse sound with controls-->
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+  </div>
+ 
+  <!--HTML5 Geolocation-->
+  <div>
+    <!--Get geolocation coordinates-->
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+
+    <!--Handle geolocation errors-->
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+    }
+    
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+        }
+    }
+    </script>
+
+    <!--Get geolocation with a map-->
+
+    <p id="demo">Click the button to get your position.</p>
+
+    <button onclick="getLocation()">Try It</button>
+    
+    <div id="mapholder"></div>
+    
+    <script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    
+    function showPosition(position) {
+        var latlon = position.coords.latitude + "," + position.coords.longitude;
+        var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+        +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+        document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+    }
+    //To use this code on your website, get a free API key from Google.
+    //Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+    
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+        }
+    }
+    </script>
+    
+
+    <!--Get geolocation with Google map script-->
+
+    <p id="demo">Click the button to get your position.</p>
+
+    <button onclick="getLocation()">Try It</button>
+    
+    <div id="mapholder"></div>
+    
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU"></script>
+    <!--
+    To use this code on your website, get a free API key from Google.
+    Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+    -->
+    <script>
+    var x = document.getElementById("demo");
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    
+    function showPosition(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        var latlon = new google.maps.LatLng(lat, lon)
+        var mapholder = document.getElementById('mapholder')
+        mapholder.style.height = '250px';
+        mapholder.style.width = '500px';
+    
+        var myOptions = {
+        center:latlon,zoom:14,
+        mapTypeId:google.maps.MapTypeId.ROADMAP,
+        mapTypeControl:false,
+        navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+        }
+        
+        var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+        var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+    }
+    
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                x.innerHTML = "User denied the request for Geolocation."
+                break;
+            case error.POSITION_UNAVAILABLE:
+                x.innerHTML = "Location information is unavailable."
+                break;
+            case error.TIMEOUT:
+                x.innerHTML = "The request to get user location timed out."
+                break;
+            case error.UNKNOWN_ERROR:
+                x.innerHTML = "An unknown error occurred."
+                break;
+        }
+    }
+    </script>
+
+    <!--Get geolocation and watch the position-->
+    <p>Click the button to get your coordinates.</p>
+
+    <button onclick="getLocation()">Try It</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.watchPosition(showPosition);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";}
+        }
+        
+    function showPosition(position) {
+        x.innerHTML="Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+
+  </div>
+
+  <!--HTML5 Local Storage-->
+  <div>
+    <!--Store a name permanently-->
+    <div id="result"></div>
+
+    <script>
+    // Check browser support
+    if (typeof(Storage) !== "undefined") {
+        // Store
+        localStorage.setItem("lastname", "Smith");
+        // Retrieve
+        document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
+    </script>
+
+    <!--Store a counter permanently-->
+        
+        <body>
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+        <div id="result"></div>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
+    <!--Store a counter for one session-->
+        <body>
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+        <div id="result"></div>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+
+  </div>
+ 
+  <!--More HTML5 Examples-->
+  <div>
+    <!--HTML5 drag and drop-->
+    <p>Drag the W3Schools image into the rectangle:</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    
+
+    <!--HTML5 web workers-->
+    <p>Count numbers: <output id="result"></output></p>
+    <button onclick="startWorker()">Start Worker</button> 
+    <button onclick="stopWorker()">Stop Worker</button>
+    
+    <p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+    
+    <script>
+    var w;
+    
+    function startWorker() {
+        if(typeof(Worker) !== "undefined") {
+            if(typeof(w) == "undefined") {
+                w = new Worker("demo_workers.js");
+            }
+            w.onmessage = function(event) {
+                document.getElementById("result").innerHTML = event.data;
+            };
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+        }
+    }
+    
+    function stopWorker() { 
+        w.terminate();
+        w = undefined;
+    }
+    </script>
+
+    <!--HTML5 server sent events-->
+    <h1>Getting server updates</h1>
+    <div id="result"></div>
+    
+    <script>
+    if(typeof(EventSource) !== "undefined") {
+        var source = new EventSource("demo_sse.php");
+        source.onmessage = function(event) {
+            document.getElementById("result").innerHTML += event.data + "<br>";
+        };
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+    }
+    </script>
+    
+  </div>
+
+  <!--This holds the stuff that runs site-->
+  <div>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
+
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
+
+    To begin the development, run `npm start` or `yarn start`.
+    To create a production bundle, use `npm run build` or `yarn build`.
+  -->
+  </div>
+  </div>
+
+</body>
+</html>
