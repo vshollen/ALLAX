@@ -1,5 +1,23 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  margin: 2;
+  padding: 2;
+  font-family: Cambria;
+  background-color:white;
+  
+}
+h1 {
+  background-color: rgb(61, 61, 61);
+}
+
+
+h2 {
+  background-color: grey(41, 41, 41);
+}
+
+div {
+  background-color: grey;
+}
+
+p {
+  background-color:green;
 }

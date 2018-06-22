@@ -1,0 +1,571 @@
+<!--https://www.w3schools.com/html/html_examples.asp-->
+<!--Any one of these things can give you more info on how to use it but build a site then do this-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <title>SOD Studios</title>
+   <!--Navbar-->
+   <style>
+        /* Navbar container */
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          font-family: Arial;
+        }
+        
+        /* Links inside the navbar */
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        /* The dropdown container */
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        
+        /* Dropdown button */
+        .dropdown .dropbtn {
+          font-size: 16px; 
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit; /* Important for vertical align on mobile phones */
+          margin: 0; /* Important for vertical align on mobile phones */
+        }
+        
+        /* Add a red background color to navbar links on hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+        
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+    </style>  
+
+<!--Video-->
+<style>
+  
+  
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: auto;
+  line-height: 1;
+  overflow-x: hidden;
+  padding: 2rem;
+  width: 100%;
+}
+
+.video {
+  position: relative;
+  padding-top: 4.1%;
+  padding-bottom: 51.95%;
+  height: 0;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+}
+
+.video-gallery {
+  margin-top: 3em;
+  position: relative;
+  width: 100%;
+}
+.video-gallery .video {
+  animation: 1200ms fadeOut ease;
+  animation-fill-mode: both;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  max-height: 19.5em;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+.video-gallery input[type="radio"] {
+  font-size: 0;
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  position: fixed;
+  width: 0;
+}
+.video-gallery input {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.video-gallery label {
+  color: #000000;
+  font-size: 1.25em;
+  font-weight: 400;
+  grid-column-start: 2;
+  margin: 0 !important;
+  padding: 1rem 0 1rem 3rem;
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+}
+.video-gallery label:last-of-type {
+  border: 0 none;
+}
+.video-gallery input[type="radio"]:checked + label {
+  color: #E41F35 !important;
+}
+.video-gallery input[type="radio"]:checked + label:before {
+  content: "▶";
+  left: 0;
+  top: 12px;
+  position: absolute;
+}
+
+.grid-row {
+  display: block;
+  height: 56vw;
+  max-height: 19.5em;
+  position: relative;
+}
+.grid-row label {
+  left: calc(50% + 16px);
+  position: relative;
+  width: calc(50% - 16px);
+}
+.grid-row .video {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+.grid-row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#video-1:checked ~ .video-1, #video-2:checked ~ .video-2, #video-3:checked ~ .video-3, #video-4:checked ~ .video-4, #video-5:checked ~ .video-5, #video-6:checked ~ .video-6 {
+  animation: 1200ms fadeIn ease;
+  animation-fill-mode: both;
+  opacity: 1;
+  width: 50%;
+}
+
+@keyframes fadeOut {
+  0% {
+    display: block;
+    height: 56vw;
+    opacity: 1;
+    width: 50%;
+  }
+  25% {
+    display: block;
+    height: 56vw;
+    opacity: 1;
+    width: 50%;
+  }
+  49% {
+    display: block;
+    height: 56vw;
+    opacity: 0;
+    width: 50%;
+  }
+  50% {
+    display: none;
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  49% {
+    display: none;
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    display: block;
+    height: 56vw;
+    opacity: 0;
+    width: 50%;
+  }
+  100% {
+    display: block;
+    height: 56vw;
+    opacity: 1;
+    width: 50%;
+  }
+}
+@supports(display: grid) {
+  .grid-row {
+    align-items: start;
+    display: grid;
+    grid-column-gap: 16px;
+    grid-row-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .grid-row label {
+    left: auto;
+    width: 100%;
+  }
+  .grid-row .video {
+    position: relative;
+    width: 100%;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      display: block;
+      height: 56vw;
+      opacity: 1;
+      width: 100%;
+    }
+    25% {
+      display: block;
+      height: 56vw;
+      opacity: 1;
+      width: 100%;
+    }
+    49% {
+      display: block;
+      height: 56vw;
+      opacity: 0;
+      width: 100%;
+    }
+    50% {
+      display: none;
+      height: 0;
+      opacity: 0;
+      width: 0;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    49% {
+      display: none;
+      height: 0;
+      opacity: 0;
+      width: 0;
+    }
+    50% {
+      display: block;
+      height: 56vw;
+      opacity: 0;
+      width: 100%;
+    }
+    100% {
+      display: block;
+      height: 56vw;
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .video-gallery {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+  }
+  .video-gallery label {
+    left: auto;
+    order: 2;
+    width: 100%;
+  }
+  .video-gallery .video {
+    order: 1;
+    padding-top: 4.1%;
+    padding-bottom: 51.95%;
+    position: relative;
+    top: auto;
+    width: 100%;
+  }
+
+  #video-1:checked ~ .video-1, #video-2:checked ~ .video-2, #video-3:checked ~ .video-3, #video-4:checked ~ .video-4, #video-5:checked ~ .video-5, #video-6:checked ~ .video-6 {
+    width: 100%;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      display: block;
+      height: 56vw;
+      opacity: 1;
+    }
+    25% {
+      display: block;
+      height: 56vw;
+      opacity: 1;
+    }
+    49% {
+      display: block;
+      height: 56vw;
+      opacity: 0;
+    }
+    50% {
+      display: none;
+      height: 0;
+      opacity: 0;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    49% {
+      display: none;
+      height: 0;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      height: 56vw;
+      opacity: 0;
+    }
+    100% {
+      display: block;
+      height: 56vw;
+      opacity: 1;
+    }
+  }
+}
+
+  
+</style>
+
+
+
+
+
+
+
+
+
+<!--This holds the stuff that runs site-->
+<div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <!--codys script-->
+    <script src="js/react.min.js"></script>
+    <script src="js/react-dom.min.js"></script>
+    <script src="js/browser.min.js"></script>    
+
+
+    
+  </div>
+</head>
+
+
+
+
+<!--Homepage will be an overview to explain the purpose of the site
+
+then every overview on each page will have a smaller explanation it should take three seconds to understand where everything is-->
+
+
+<body>
+  <h1>SOD</h1> 
+<!--Nav-->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    
+    <div class="dropdown">
+        <button class="dropbtn">Gallery 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <!--I think the css would link in the qoute here "style.css"-->
+        <div class="dropdown-content">
+          <a href="Gallery.html">Overview</a>
+          <a href="Gallery_Features.html">Features</a>
+          <a href="Gallery_Shorts.html">Shorts</a>
+          <a href="Gallery_Documentaries.html">Documentaries</a>
+        </div>
+      </div> 
+    
+    <div class="dropdown">
+        <button class="dropbtn">Profile Search 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="ProfileSearch.html">Overview</a>
+          <a href="ProfileSearch_ByPosition.html">By Position</a>
+          <a href="ProfileSearch_ByReview.html">By Review</a>
+          <a href="ProfileSearch_GeneralNetwork.html">General Network</a>
+        </div>
+      </div> 
+    
+    <div class="dropdown">
+        <button class="dropbtn">In Production 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="InProduction.html">Overview</a>
+          <a href="InProduction_Schedule.html">Schedule</a>
+          <a href="InProduction_Location.html">location</a>
+          <a href="InProduction_PositionPosts.html">Position Posts</a>
+        </div>
+      </div> 
+    
+    <div class="dropdown">
+        <button class="dropbtn">Blog 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Blog.html">Overview</a>
+          <a href="Blog_articles.html">Articles</a>
+          <a href="Blog_QuickTrades.html">Quick Trades</a>
+        </div>
+      </div> 
+
+    <div class="dropdown">
+      <button class="dropbtn">Legal Help 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="LegalHelp.html">Overview</a>
+        <a href="#">SAG Paperwork</a>
+        <a href="#">Location Paperwork</a>
+        <a href="#">Tax Incentives</a>
+        <a href="#">Insurance</a>
+        <a href="#">Contracts</a>
+        <a href="#">LLC Help</a>
+        <a href="#">Distribution Help</a>
+      </div>
+    </div> 
+  </div>
+
+<!--Videos-->
+<div>
+   <div class="grid-row reverse video-gallery">
+    <input type="radio" value="1" name="video-list" id="video-1" checked="checked" /><label for="video-1">Option 1</label>
+    <input type="radio" value="2" name="video-list" id="video-2" /><label for="video-2">Option 2</label>
+    <input type="radio" value="3" name="video-list" id="video-3" /><label for="video-3">Option 3</label>
+    <input type="radio" value="4" name="video-list" id="video-4" /><label for="video-4">Option 4</label>
+    <input type="radio" value="5" name="video-list" id="video-5" /><label for="video-5">Option 5</label>
+    <input type="radio" value="6" name="video-list" id="video-6" /><label for="video-6">Option 6</label>
+    <!-- videos -->
+    <div class="video video-1">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/ROqDTIxRX0Y" frameborder="0" allowfullscreen></iframe>
+    </div>
+   
+    <div class="video video-2">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/9iGoDNlKY-g" frameborder="0" allowfullscreen></iframe>
+    </div>
+   
+    <div class="video video-3">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/l70UhhNalqA" frameborder="0" allowfullscreen></iframe>
+    </div>
+   
+    <div class="video video-4">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/XDrB5c4-c9Y" frameborder="0" allowfullscreen></iframe>
+    </div>
+   
+    <div class="video video-5">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/UXP307MGQzs" frameborder="0" allowfullscreen></iframe>
+    </div>
+   
+    <div class="video video-6">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/0kY0Q5hdjDI" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- videos -->
+   </div>
+</div>
+
+
+
+
+
+
+
+  <!--This holds the stuff that runs site-->
+  <div>
+      <noscript>
+        You need to enable JavaScript to run this app.
+      </noscript>
+      <div id="root"></div>
+      <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+  
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+  
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    </div>
+</body>
+</html>

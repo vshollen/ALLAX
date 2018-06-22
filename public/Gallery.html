@@ -1,11 +1,10 @@
 <!--https://www.w3schools.com/html/html_examples.asp-->
 <!--Any one of these things can give you more info on how to use it but build a site then do this-->
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head> 
-    <title>SOD Studios</title>
-
+  <!--navbar horizontal-->
     <style>
         /* Navbar container */
         .navbar {
@@ -79,15 +78,17 @@
     </style>  
 
 
+<style>
+
+
+</style>
+  
 
 
 
 
-
-
-
-<!--This holds the stuff that runs site-->
-<div>
+ <!--This holds the stuff that runs site-->
+ <div>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -115,19 +116,32 @@
 
     
   </div>
+  <title>SOD Studios</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 
 
+<!--have code here that input variables to the pages thats what the overview page here-->
 
-<!--Homepage will be an overview to explain the purpose of the site
-
-then every overview on each page will have a smaller explanation it should take three seconds to understand where everything is-->
 
 
 <body>
   <h1>SOD</h1> 
-<!--Nav-->
+<!--Nav horizontal-->
 <div class="navbar">
     <a href="index.html">Home</a>
     
@@ -135,12 +149,11 @@ then every overview on each page will have a smaller explanation it should take 
         <button class="dropbtn">Gallery 
           <i class="fa fa-caret-down"></i>
         </button>
-        <!--I think the css would link in the qoute here "style.css"-->
         <div class="dropdown-content">
-          <a href="Gallery.html">Overview</a>
-          <a href="Gallery_Features.html">Features</a>
-          <a href="Gallery_Shorts.html">Shorts</a>
-          <a href="Gallery_Documentaries.html">Documentaries</a>
+          <a href="#">Overview</a>
+          <a href="#">Features</a>
+          <a href="#">Shorts</a>
+          <a href="#">Documentaries</a>
         </div>
       </div> 
     
@@ -149,10 +162,10 @@ then every overview on each page will have a smaller explanation it should take 
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="ProfileSearch.html">Overview</a>
-          <a href="ProfileSearch_ByPosition.html">By Position</a>
-          <a href="ProfileSearch_ByReview.html">By Review</a>
-          <a href="ProfileSearch_GeneralNetwork.html">General Network</a>
+          <a href="#">Overview</a>
+          <a href="#">By Position</a>
+          <a href="#">By Review</a>
+          <a href="#">General Network</a>
         </div>
       </div> 
     
@@ -161,21 +174,22 @@ then every overview on each page will have a smaller explanation it should take 
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="InProduction.html">Overview</a>
-          <a href="InProduction_Schedule.html">Schedule</a>
-          <a href="InProduction_Location.html">location</a>
-          <a href="InProduction_PositionPosts.html">Position Posts</a>
+          <a href="#">Overview</a>
+          <a href="#">Schedule</a>
+          <a href="#">location</a>
+          <a href="#">Position Posts</a>
         </div>
       </div> 
     
     <div class="dropdown">
-        <button class="dropbtn">Blog 
+        <button class="dropbtn">Articles 
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="Blog.html">Overview</a>
-          <a href="Blog_articles.html">Articles</a>
-          <a href="Blog_QuickTrades.html">Quick Trades</a>
+          <a href="#">Overview</a>
+          <a href="#">Articles</a>
+          <a href="#">Quick Trades</a>
+          <a href="#">Blog</a>
         </div>
       </div> 
 
@@ -184,8 +198,8 @@ then every overview on each page will have a smaller explanation it should take 
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="LegalHelp.html">Overview</a>
-        <a href="#">SAG Paperwork</a>
+        <a href="#">Overview</a>
+        <a href="#">Sag Paperwork</a>
         <a href="#">Location Paperwork</a>
         <a href="#">Tax Incentives</a>
         <a href="#">Insurance</a>
@@ -196,42 +210,83 @@ then every overview on each page will have a smaller explanation it should take 
     </div> 
   </div>
 
-<!--A good format might be a description of a pdf then a picture hover over button that previews what the article looks like maybe 
-have it looks like this
+<!--Nav Vert Bar-->
+<div><nav id="menu"> 
+  <ul class="parent-menu"> 
+    <li><a href="#">Home & Kitchen</a> 
+      <ul> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+      </ul> 
+    </li> 
+    <li><a href="#">Electronics</a> 
+      <ul> 
+       <li><a href="#">item</a></li> 
+       <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+      </ul>
+    </li> 
+    <li><a href="#">Clothing</a> <ul> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+        <li><a href="#">item</a></li> 
+      </ul>
+    </li> 
+    <li><a href="#">Cars & Motorbikes</a> 
+        <ul> 
+          <li><a href="#">item</a></li> 
+          <li><a href="#">item</a></li> 
+          <li><a href="#">item</a></li> 
+          <li><a href="#">item</a></li> 
+        </ul> 
+      </li> 
+    <li><a href="#">Books</a> <ul> 
+          <li><a href="#">item</a></li> 
+          <li><a href="#">item</a></li> 
+          <li><a href="#">item</a></li> 
+          <li><a href="#">item</a></li> 
+        </ul> 
+      </li> 
+    <li><a href="#">Support</a> 
+      <ul> 
+            <li><a href="#">Contact Us</a></li> 
+            <li><a href="#">Forum</a></li> 
+            <li><a href="#">Deliveries</a></li> 
+            <li><a href="#">T&C</a></li> </ul> 
+          </li> 
+          </ul> 
+          </nav> 
 
-this is for a 7 page document
-
-description: what the pdf is
-preview: ooooooo
-link to download-->
+  </div>
 
 
 
 
 
 
+<!--This holds the stuff that runs site-->
+<div>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
 
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
 
-
-
-
-
-  <!--This holds the stuff that runs site-->
-  <div>
-      <noscript>
-        You need to enable JavaScript to run this app.
-      </noscript>
-      <div id="root"></div>
-      <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-  
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-  
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    </div>
+    To begin the development, run `npm start` or `yarn start`.
+    To create a production bundle, use `npm run build` or `yarn build`.
+  -->
+  </div>
 </body>
 </html>
